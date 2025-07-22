@@ -1,2 +1,2 @@
 # Refresher
-This is only a refresher for my brain to becoming a better front end developer :)
+This is only a refresher for my brain to become a better front end developer :)
