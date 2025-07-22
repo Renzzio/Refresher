@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-gap: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+
+        }
+        .name {
+            font-size: 20px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+
+        }
+
+        .mutual-container {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-gap: 10px;
+            align-items: center;
+        }
+
+        .mutual-pic {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .mutual-text {
+            align-self: center;
+            color: darkgray;
+            font-size: 14px;
+        }
+
+        button {
+            color: white;
+            padding: 8px 25px;
+            background-color: rgb(51, 119, 245);
+            border-width: 0px;
+            border-radius: 5px;
+        }
+
+        .add-container {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .info {
+            padding: 0px 8px 8px 8px;
+        }
+
+        button:hover
+        {
+            background-color: rgb(41, 99, 225);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Practice</h1>
+    
+    <div class="container">
+        <div class="add-container">
+            <img src="pic/cat.jpg" alt="" class="profile-pic">
+            <div class="info">
+                <p class="name"><strong>Oliver</strong></p>
+                <div class="mutual-container">
+                    <img src="pic/dog2.jpg" alt="" class="mutual-pic">
+                    <p class="mutual-text">2 mutual friends</p>
+                </div>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="add-container">
+            <img src="pic/cat2.jpg" alt="" class="profile-pic">
+            <div class="info">
+                <p class="name"><strong>Mimi</strong></p>
+                <div class="mutual-container">
+                    <img src="pic/dog2.jpg" alt="" class="mutual-pic">
+                    <p class="mutual-text">3 mutual friends</p>
+                </div>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="add-container">
+            <img src="pic/dog.jpg" alt="" class="profile-pic">
+            <div class="info">
+                <p class="name"><strong>Rex</strong></p>
+                <div class="mutual-container">
+                    <img src="pic/dog2.jpg" alt="" class="mutual-pic">
+                    <p class="mutual-text">4 mutual friends</p>
+                </div>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
