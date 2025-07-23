@@ -1,0 +1,44 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    width: 300px;
+
+}
+
+.prof-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 0;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.prof-pic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info2 {
+    color: darkgray;
+    margin-left: 0;
+}
+
+.info {
+    align-items: left;
+    font-size: 12px;
+    margin-right: auto;
+}
+
+button {
+    background-color: #4a82cb;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+}
