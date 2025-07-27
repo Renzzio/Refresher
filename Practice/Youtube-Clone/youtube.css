@@ -139,20 +139,42 @@ body {
     cursor: pointer;
 }
 
+
+/* MAIN BODY */
 .yt-main {
     background-color: rgb(249, 249, 249);
     top: 58px;
-    left: 73px;
+    left: 103px;
     position: fixed;
-    width: calc(100% - 73px);
     height: 100%;
     padding: 24px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1px;
     overflow-y: auto;
 
+}
+
+@media (max-width: 770px) {
+    .yt-main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+@media (min-width: 1151px) {
+    .yt-main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 771px) and (max-width: 1150px) {
+    .yt-main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .yt-vid {
