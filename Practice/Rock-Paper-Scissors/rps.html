@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+
+    <link rel="icon" href="icons/rock-paper-scissors.png" type="image/png">
+    <link rel="stylesheet" href="rps.css">
+
+    <script src="rps.js"></script>
+</head>
+<body>
+    <div class="rps-container">
+        <p class="title">Rock Paper Scissors</p>
+        <button class="reset-btn" onclick="resetScore()">RESET THE SCORE</button>
+        <div class="score-container">
+            <div class="player-score">PLAYER SCORE: <span id="p-score">0</span></div>
+            <div class="tie-score">TIE: <span id="t-score">0</span></div>
+            <div class="computer-score">COMPUTER SCORE: <span id="c-score">0</span></div>
+        </div>
+        <div class="result" id="result-display"></div>
+        <div class="display">
+            <div class="player-choice" ><img src="icons/left-paper.png" alt="" id="player-move-display"></div>
+            <div>vs</div>
+            <div class="computer-choice" ><img src="icons/right-rock.png" alt="" id="computer-move-display"></div>
+        </div>
+        <div class="note">Choose your move, rock paper or scissors?</div>
+        <div class="move">
+            <button class="rock" onclick="playGame('rock')">ROCK</button>
+            <button class="paper" onclick="playGame('paper')">PAPER</button>
+            <button class="scissors" onclick="playGame('scissors')">SCISSORS</button>
+        </div>
+    </div>
+    
+   
+</body>
+</html>

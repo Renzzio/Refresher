@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.rps-container {
+    width: 720px;
+    height: 512px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #353535;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #BEBFD1;
+}
+
+.reset-btn {
+    border: 0;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    color: #BEBFD1;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.result {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    height: 46px;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin-top: 20px;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 154px;
+}
+
+
+.display img {
+    width: 150px;
+    height: 150px;
+}
+
+.note {
+    color: #827D7D;
+    font-size: 14px;
+}
+
+.move {
+    margin-top: 10px;
+    display: flex;
+    gap: 45px;
+}
+
+.move button {
+    border: 0;
+    background-color: #2751A3;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 170px;
+    padding: 10px 0px;
+    border-radius: 10px;    
+}
+
+.move button:hover {
+    background-color: #1E3A6D;
+}
+
+@keyframes shake {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(-10px); }
+    40% { transform: translateY(10px); }
+    60% { transform: translateY(-10px); }
+    80% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+.shake {
+    animation: shake 0.6s;
+}
+
+.win {
+    color: #2ef3a1;
+}
+
+.lose {
+    color: #f74444;
+}
+
+.tie {
+    color: #ffff83;
+}
